@@ -5,3 +5,14 @@ const crearUsuarioDB = async (usuario) => {
     return respuesta;
 }
 
+const obtenerUsuarioDB = async () => {
+    let respuesta = await Usuario.find();
+    return respuesta;
+}
+
+module.exports = {
+    crearUsuarioDB,
+    obtenerUsuarioDB
+}
+
+ 
