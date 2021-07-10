@@ -14,8 +14,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 /** Routas Servicios  */
+const usuario = require('./funcionalidad/rutas/usuario');
 
-
+router.use('/usuario',usuario);
 
 router.get('/', (req, res) => {
   res.send('Hello World!')
